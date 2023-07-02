@@ -1,5 +1,11 @@
 /*Maaz khan
  * Reg No : 19jzele0320
+
+ /////////////////////////////////////////    TASK-3  ///////////////////////////////////////////////////
+
+ Monitor two switches such that
+ 1. when switch1 is pressed then LED1 should turn OFF if LED1 is already OFF then it should ignore it
+ 2. when switch2 is pressed then LED2 should turn ON if LED2 is already ON then it should ignore it
  */
 #include "F28x_Project.h"
 
@@ -38,7 +44,7 @@ void main(){
 
         // if LED1 is on
         if(SWITCH1==1 & LED1==1){
-            // LED1 shoukd turn off
+            // LED1 should turn off
             LED1=0;
         }
         // if LED2 is off
